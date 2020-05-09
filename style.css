@@ -67,57 +67,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 }
 
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .card{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .card button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .card icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .card .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .card .a-btn{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .card .a-btn:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
-}
-
-
 /* Light theme */
 
 .d-bloc .card,.l-bloc{
@@ -144,6 +93,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 .d-bloc .card .btn-wire,.d-bloc .card .btn-wire:hover,.l-bloc .btn-wire,.l-bloc .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
+}
+/* Dividers */
+
+.b-divider{
+	border-top:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
 }
 
 
@@ -209,7 +164,8 @@ button{
 .text-center .a-block{
 	text-align:center;
 }
-
+.btn .caret{
+	margin:0 0 0 5px}
 /* = Icons
 -------------------------------------------------------------- */
 .icon-sm{
@@ -314,11 +270,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .text-area-style{
 	margin-top:30px;
-	height:0px;
-	width:78.6%;
+	height:0%;
+	width:80%;
 }
 .h4-style{
-	font-family:"helvetica";
+	font-family:"Bebas Neue";
 }
 .btn-envoyer{
 	margin:22px 0px 0px 0px;
@@ -363,8 +319,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	border-style:solid;
 	border-color:rgba(0,0,0,0.00)!important;
 	padding-top:0px;
-	font-family:"Marck Script";
+	font-family:"Roboto";
 	padding-bottom:0px;
+	font-weight:400;
 	margin:0px 0px 0px 0px;
 	border-width:4px 4px 4px 4px;
 }
@@ -409,7 +366,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#ffffff;
 	font-family:"Marck Script";
 	font-size:60px;
-	margin:10px 0px 0px 127px;
+	margin:10px 0px 0px 0px;
 }
 .voir-le-catalogue{
 	margin-top:29px;
@@ -553,6 +510,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .link-color:hover{
 	color:#CE7341!important;
+	text-transform:uppercase;
+	font-weight:bold;
 }
 .img-modal-pays-doc{
 	;
@@ -612,11 +571,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .card-saint-emillion{
 	margin-top:0px;
-	margin-bottom:20px;
-}
-.field-style{
-	width:31.84%;
-	margin-left:500px;
+	margin-bottom:40px;
 }
 .label-style{
 	font-family:Roboto;
@@ -663,6 +618,133 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .input-robe{
 	background-color:#F5EBDF;
 }
+.btn-filter{
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:0px;
+}
+.btn-search-style{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.field-style{
+	height:48px;
+	background-color:#F5EBDF;
+	width:100%;
+}
+.card-description-commentaires-notes{
+	margin-top:35px;
+	margin-left:0px;
+	margin-right:0px;
+}
+.bloc-style{
+	width:22.88%;
+}
+.btn-contries-years-filter{
+	margin-top:0px;
+	margin-bottom:25px;
+}
+.btn-ous-les-pays-style{
+	width:100%;
+}
+.btn-description-{
+	background-color:#0096FF;
+}
+.mot-cle-rechercher{
+	margin-top:0px;
+	margin-bottom:20px;
+	padding-bottom:0px;
+}
+.img-18-style{
+	margin-bottom:15px;
+	width:162px;
+}
+.h3-9-style{
+	font-family:"Marck Script";
+}
+.field-0-style{
+	font-size:15px;
+	font-family:"Roboto";
+	font-weight:300;
+	background-color:#F5EBDF;
+}
+.label-6-style{
+	font-family:Lato;
+	font-weight:300;
+}
+.label-5-style{
+	font-family:Lato;
+	font-weight:300;
+}
+.label-4-style{
+	font-family:Lato;
+	font-weight:300;
+}
+.label-3-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.label-2-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.label-région-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-25-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-24-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-23-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-22-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-21-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-20-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.p-19-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.footer-link{
+	font-family:"Roboto";
+	font-weight:300;
+}
+.h5-compagnie-style{
+	font-family:"Bebas Neue";
+}
+.h5-footer-style{
+	font-family:"Bebas Neue";
+}
+.h5-fonctionnement-style{
+	font-family:"Bebas Neue";
+}
+.label-13-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.label-prénom-style{
+	font-family:Roboto;
+	font-weight:300;
+}
+.label-email-style{
+	font-family:Roboto;
+	font-weight:300;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -705,6 +787,23 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .btn-ruddy-brown:hover{
 	background:#984b26!important;
 	color:#FFFFFF!important;
+}
+.btn-azure{
+	background:#0096FF;
+	color:#FFFFFF!important;
+}
+.btn-azure:hover{
+	background:#0078cc!important;
+	color:#FFFFFF!important;
+}
+
+/* Link colour styles */
+
+.ltc-ruddy-brown{
+	color:#BE5E30!important;
+}
+.ltc-ruddy-brown:hover{
+	color:#984b26!important;
 }
 
 /* Icon colour styles */
