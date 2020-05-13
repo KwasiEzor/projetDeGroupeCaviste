@@ -1,0 +1,6 @@
+#liste li:hover{
+    cursor: pointer;
+    background-color:#984b26 ;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}

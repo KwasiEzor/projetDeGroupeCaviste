@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css?5966">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="style.css?7257">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -494,17 +495,17 @@
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="form-group">
-									<input class="form-control field-0-style" placeholder="Entrez le mot-clé ici" maxlength="50" />
+									<input class="form-control field-0-style" placeholder="Entrez le mot-clé ici" maxlength="50" id="inputSearch">
 								</div>
 							</div>
 							<div class="col">
-								<a href="./" class="btn float-lg-right btn-ruddy-brown btn-block">Chercher</a>
+								<button  class="btn float-lg-right btn-ruddy-brown btn-block" id="btSearchWines">Chercher</button>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-12">
 								<div class="card">
-									<div class="card-body">
+									<!-- <div class="card-body">
 										<p class="p-19-style">
 											Côtes de Bordeaux
 										</p>
@@ -538,7 +539,10 @@
 										<p class="p-24-style">
 											Côtes de Bordeaux Blaye blanc
 										</p>
-									</div>
+									</div> -->
+									<ul id="liste" class="list-group">
+										
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -553,7 +557,7 @@
 						</h3>
 					</div>
 					<div class="card-body bgc-ghost-white">
-						<img src="img/lazyload-ph.png" data-src="img/Bouteille%20Saint%20Emilion.png" class="img-fluid mx-auto d-block img-18-style lazyload" alt="Bouteille%20Saint%20Emilion" />
+						<img id="imgWine" src="img/lazyload-ph.png" data-src="img/Bouteille%20Saint%20Emilion.png" class="img-fluid mx-auto d-block img-18-style lazyload" alt="Bouteille%20Saint%20Emilion" />
 						<div class="row">
 							<div class="col-lg-4 offset-lg-0">
 								<span class="fa fa-plus-circle icon-md icon-timberwolf float-lg-right"></span>
@@ -609,38 +613,38 @@
 				</div>
 				<div class="form-group">
 					<label class="label-région-style">
-						Région
+						Nom du vin
 					</label>
-					<input class="form-control input-region" placeholder="ex : Bordeaux" />
+					<input id="name" class="form-control input-region" placeholder="ex : Bordeaux" />
 					<div class="form-group">
 						<label class="label-2-style">
-							Caractère
+							Pays d'origine
 						</label>
-						<input class="form-control input-caractere" placeholder="ex : velouté" />
+						<input id="country" class="form-control input-caractere" placeholder="ex : velouté" />
 					</div>
 					<div class="form-group">
 						<label class="label-3-style">
-							Corps
+							Région
 						</label>
-						<input class="form-control input-corps" placeholder="ex : corsé" />
+						<input id="region" class="form-control input-corps" placeholder="ex : corsé" />
 					</div>
 					<div class="form-group">
 						<label class="label-4-style">
 							Cépage
 						</label>
-						<input class="form-control input-cepage" placeholder="ex : cabernet" />
+						<input id="grapes" class="form-control input-cepage" placeholder="ex : cabernet" />
 					</div>
 					<div class="form-group">
 						<label class="label-5-style">
 							Année
 						</label>
-						<input class="form-control input-annee" placeholder="ex : 2010" />
+						<input id="year" class="form-control input-annee" placeholder="ex : 2010" />
 					</div>
 					<div class="form-group">
 						<label class="label-6-style">
 							Robe
 						</label>
-						<input class="form-control input-robe" placeholder="ex : pourpre" />
+						<input id="extra" class="form-control input-robe" placeholder="ex : pourpre" />
 					</div>
 				</div>
 			</div>
@@ -672,7 +676,7 @@
 								<h3 class="mg-md">
 									<span class="fa fa-star"></span> Heading content
 								</h3>
-								<p>
+								<p id="description">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 								</p>
 							</div>
@@ -680,7 +684,7 @@
 								<h3 class="mg-md">
 									Heading content
 								</h3>
-								<p>
+								<p id="comment">
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 								</p>
 							</div>
@@ -890,8 +894,9 @@
 			</div>
 			<div class="col-sm-8 offset-lg--1 col-lg-8">
 				<div class="card">
-					<div class="card-body bgc-linen card-stat">
-						<img src="img/lazyload-ph.png" data-src="img/istockphotojj-1162542209-1024x1024.png" class="img-fluid mx-auto d-block lazyload" alt="istockphotojj 1162542209-1024x1024" />
+					<div class="card-body bgc-linen card-stat" id="chartsBox">
+						<!-- <img src="img/lazyload-ph.png" data-src="img/istockphotojj-1162542209-1024x1024.png" class="img-fluid mx-auto d-block lazyload" alt="istockphotojj 1162542209-1024x1024" /> -->
+						<canvas id="draw" width="550px" height="550px"></canvas>
 					</div>
 				</div>
 			</div>
@@ -1038,6 +1043,8 @@
 <script src="./js/bootstrap.bundle.js?8864"></script>
 <script src="./js/blocs.js?653"></script>
 <script src="./js/lazysizes.min.js" defer></script>
+<script src="./js/main.js" ></script>
+<script src="./node_modules/chart.js/dist/Chart.js" ></script>
 <!-- Additional JS END -->
 
 
