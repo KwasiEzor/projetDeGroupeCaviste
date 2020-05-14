@@ -134,7 +134,7 @@ btSearchWines.onclick = function(){
 let chartBox = document.getElementById('chartBox');
 let ctx = document.getElementById('draw').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
