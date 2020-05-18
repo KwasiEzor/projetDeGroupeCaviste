@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .text-center{
+            display: inline-block;
+            margin: 2rem 3rem;
+            animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;/* don't forget to set a duration!*/
+        }
+        p{
+            display: inline-block;
+            animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 3s;
+        }
+       p{
+           width: 500px;
+           height: 200;
+           margin-top: 3em;
+       }
+    </style>
+</head>
+<body>
+    <h1 class="text-center" class="animate__animated animate__bounce">First title in Bootstrap</h1>
+    <p class="text-justify p-2" class="animate__animated animate__zoomInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti nesciunt incidunt est excepturi ipsam iste consequuntur vero, ea doloremque consequatur libero nihil inventore numquam, doloribus, nemo magni in dolorum?</p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./js/test.js"></script>
+</body>
+</html>
